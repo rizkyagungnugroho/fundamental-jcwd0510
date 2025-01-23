@@ -1,0 +1,19 @@
+Falsy : 
+● "" (empty string)
+● 0
+● null
+● undefined
+● NaN
+
+Truthy : 
+● " " (blank character string)
+● [] (empty array) 
+● {} (empty object)
+● 1
+● "1" (string)
+● "0" (string)
+● "false" (string)
+● "true" (string)
+
+contoh true itu { }  ada isinya itu walapun cuma spasi 
+klo false {} gak ada isinya 
