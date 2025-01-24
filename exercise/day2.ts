@@ -1,6 +1,6 @@
 //SOAL 1 Tulis kode untuk memeriksa apakah angka tersebut ganjil atau genap
 
-const angka:Number = 20;
+const angka:number = 20;
     if (angka % 2 == 0) { 
       // kondisi untuk memeriksa apakah angka yang dimasukkan ke variabel angka adalah bilangan genap.
       //Operator % (modulus) digunakan untuk mencari sisa pembagian angka dengan 2. Jika angka % 2 hasilnya sama dengan 0, berarti angka tersebut genap
@@ -35,11 +35,11 @@ console.log(isPrime ? `${n} is a prime number.` : `${n} is not a prime number.`)
 // SOAl 3  Tulis kode untuk menemukan jumlah angka 1 sampai N
 //cara 1 
 
-//const angka2: number=5;
-//const result=(angka2* (angka2+1)) /2;
+//const angka3: number=5;
+//const result=(angka3* (angka3+1)) /2;
 //console.log(result);
 
-//const angka2: number=5;
+//const angka4: number=5;
 //let sum: number=0;
 //let massage:string=""
 
@@ -60,7 +60,7 @@ const num: number= 4;
 let sum: number= 1;
 let massage: string="";
 
-for(let i =num; i >= 1; i ==) {
+for(let i =num; i >= 1; i ++) {
   sum *= i;
 
   if (i === 1) {
@@ -77,6 +77,19 @@ console.log(massage + " = " +sum);
 //soal 5
 //bilangan fibonaci adalah deret angka dimana setiap angka setelah
 // dua angka pertama adalah hasil penjumlahan dari dua angka sebelumnya
+ 
+const p: number= 15;
+let a:number =0;
+let b:number=1;
+
+for(let i = 0; i <p; i++) {
+  let next: number =a + b ;
+  a = b;
+  b = next;
+}
+
+console.log(a);
+
 
 
 

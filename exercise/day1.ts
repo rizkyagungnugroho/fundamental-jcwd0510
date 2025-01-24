@@ -55,3 +55,5 @@ console.log(bedaHari);
 
 
 
+console.log(bedaHari);
+console.log(bedaHari);
