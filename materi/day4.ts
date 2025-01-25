@@ -34,6 +34,10 @@ type Stundent= {
     address?:Address;
     };
 
+    type Address = {
+        city: string; // Kota
+        street: string; // Jalan
+    };
 
 const stundents: Stundent[]= [
     {name: "Budi", 
@@ -54,15 +58,15 @@ const stundents: Stundent[]= [
 //  Perulangan ini merupakan cara yang sederhana dan ringkas untuk menelusuri item dalam array. 
 // jadi dia bakal looping sesua yang ada pada const fruits 
 
- const fruits: string[] = ["apple", "banana", "orange"];
- for (const fruit of fruits)
-    console.log(fruit);
-    
- const numbers:number[] = [1,2,3,4,5,6,];
- let total:number=0;
-        for (const number of numbers)
-          total += number;
-console.log(total) 
+    const fruits: string[] = ["apple", "banana", "orange"];
+    for (const fruit of fruits)
+        console.log(fruit);
+        
+    const numbers:number[] = [1,2,3,4,5,6,];
+    let total:number=0;
+            for (const number of numbers)
+            total += number;
+    console.log(total) 
 
 //====================== FUNCTION
 //1. funtion declaration
@@ -247,5 +251,6 @@ const array3:string[]=["halo"];
 const array4:string[]=["dunia"];
 console.log(array4.concat(array3));
 
+// another option
 const mergerArr=[...array1, ...array2, ...array3];
 console.log(mergerArr);
