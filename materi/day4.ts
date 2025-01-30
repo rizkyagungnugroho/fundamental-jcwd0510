@@ -21,7 +21,7 @@ console.log(arr);
 //PascalCase
 //Singular
 // interface Stundent {
-//  name: string;
+//  name: string;;
 //  email: string;
 // }
 // type sama interface sama aja kegunaannya cuma beda penulisan kalo interface pake {
@@ -254,3 +254,113 @@ console.log(array4.concat(array3));
 // another option
 const mergerArr=[...array1, ...array2, ...array3];
 console.log(mergerArr);
+
+// SPLICE -> untuk menghapus , mengganti , atau menambahkan value pada sebuah arra
+// rumus -> splice(startIndex, brpYgMauDiDelete, item)
+
+const months:string[]= ["jan", "march", "april", "june"];
+months.splice(1,0, "feb"); // menambahkan data baru pada index 1
+console.log(months);
+
+months.splice(4,1);
+console.log(months);
+
+months.splice(3,1, "may");
+console.log(months);
+
+//SLICE  -> mereturn array baru berdasarkan start index dan end index
+//rumus -> slice(startIndex, endIndex)
+
+const fruits1: string[]= ["apple", "banana", "orange", "manggo", "lemon"];
+console.log(fruits1.slice(1,4)); //dari depan
+console.log(fruits1.slice(-4, -1 )); // dari belakang
+
+//INDEXOF -> mencari index dari value yang kita search, kalo tidak ditemukan
+//akan me return -1
+
+const fruits2: string[]= ["apple", "banana", "orange", "manggo", "lemon"];
+console.log(fruits2.indexOf("manggo"));
+console.log(fruits2.indexOf("test"));
+
+
+//SORT -> mengurutkna isi array berupa string atau number
+//versi String
+const fruits3: string[]= ["manggo", "apple", "banana", "orange", "lemon"];
+fruits3.sort();
+console.log(fruits3);
+
+//versi number tanpa compare function
+const points:number=[]= [3,2,10,5,6];
+points.sort();
+console.log(points);
+
+//versi number menggunakan compare function
+const points2:number=[]= [3,2,10,5,6];
+//points2.sort((a,b) => a-b); // asc
+points2.sort((a,b) => b-a) //desc
+console.log(points2);
+
+//REVERSE ->  membalikan urutan element dalam array
+const points3:number=[]= [3,2,10,5,6];
+points3.reverse();
+console.log(points3);
+
+// MAP -> melakukan looping pada array dan akan mereturn array baru
+
+const points4: number=[]= [1,2,3,4,5,6];
+const result2=points4.map((points => {
+    return points *2;
+});
+console.log(result2);
+
+// FOREACH -> melakukan looping pada array tadi tidak me-return baru
+
+const fruits5: string[]= ["manggo", "apple", "banana", "orange", "lemon"];
+let container="";
+const result3= fruits5.forEach((fruits, index) => {
+console.log(fruits);
+console.log(index);
+return container += fruits + " ";
+});
+console.log(result3);
+console.log(container);
+
+// FILTER ->  melakukan looping pada aray dan menghasilkan array baru berdasarkan 
+// kondisi para return function
+
+const ages: number[] = [32,15,40,22,12];
+const result4= ages.filter((age) =>{
+    return age > 17;
+});
+console.log(result4);
+
+// FIND -> mencari value yang ditemukan pertama kali di dalam array
+const ages2: number[] = [32,15,40,22,12];
+const result5= ages2.find((age) => age > 14);
+console.log(result5);
+
+// const result5= ages2.find((age) => {
+// retrun age ====12;
+//});
+
+// FIND INDEX -> mirip seperti find tapi yang dihasilkan adalah indexnya
+const ages3: number[] = [9,12,40,22,12];
+const result6= ages3.findIndex((age) => {
+    return age > 12 ;
+});
+
+console.log(result6);
+
+
+// REDUCE -> biasa digunakan untuk melakukan operasi aritmatika pada tiap isi array
+
+const numbers1: number[]= [200,50,100,50];
+const result7= numbers1.reduce((a ,b) => a + b);
+console.log(result7);
+
+// INCLUDES -> mengecek value pada array ada apa tidak , hasil return nya adalah booelan
+
+const fruit6: string[]=["manggo", "apple", "banana", "orange", "lemon"];
+console.log(fruit6.includes("apple"));
+console.log(fruit6.includes("gak ada"));
+
