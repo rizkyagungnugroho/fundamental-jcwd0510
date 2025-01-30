@@ -1,17 +1,15 @@
 // soal 1 
-function createTriangle(height) {
-    let num = 1; // Starting number
-    for (let i = 1; i <= height; i++) { // Loop for each row
-        let row = ''; // Initialize an empty string for the row
-        for (let j = 1; j <= i; j++) { // Loop for each column in the row
-            row += num < 10 ? `0${num} ` : `${num} `; // Add formatted number (with leading zero if needed)
-            num++; // Increment the number for the next column
-        }
-        console.log(row.trim()); 
-    }
-}
-createTriangle(4);
+function segitiga(height: number) {
+    for(let i = 1; i <= height;i++) {
+        let row: String=" ";
+    for(let j =1; j <= i;j++) {
+        row += j + " ";
 
+    }
+    console.log(row);
+    
+}
+segitiga(5);
 
 // soal 2 
 
