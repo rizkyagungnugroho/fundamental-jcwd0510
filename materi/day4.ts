@@ -283,7 +283,7 @@ console.log(fruits2.indexOf("manggo"));
 console.log(fruits2.indexOf("test"));
 
 
-//SORT -> mengurutkna isi array berupa string atau number
+//SORT -> mengurutkan isi array berupa string atau number
 //versi String
 const fruits3: string[]= ["manggo", "apple", "banana", "orange", "lemon"];
 fruits3.sort();
@@ -309,11 +309,11 @@ console.log(points3);
 
 const points4: number=[]= [1,2,3,4,5,6];
 const result2=points4.map((points => {
-    return points *2;
+    return points +2;
 });
 console.log(result2);
 
-// FOREACH -> melakukan looping pada array tadi tidak me-return baru
+// FOREACH -> pr
 
 const fruits5: string[]= ["manggo", "apple", "banana", "orange", "lemon"];
 let container="";
@@ -362,5 +362,5 @@ console.log(result7);
 
 const fruit6: string[]=["manggo", "apple", "banana", "orange", "lemon"];
 console.log(fruit6.includes("apple"));
-console.log(fruit6.includes("gak ada"));
+console.log(fruit6.includes);
 

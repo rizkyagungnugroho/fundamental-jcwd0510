@@ -1,4 +1,4 @@
-
+// soal 1
 function segitiga(height: number) {
     for (let i = 1; i <= height;i++) {
         let row: String=" ";
@@ -87,19 +87,14 @@ console.log(removeOddNumbers([1,2,3,4,5,6,7,8,9,10]));
 
 // cara 2
 
-function removeOddNumbers1(numbers:number[]) {
-    const result : number[] = [];
-
-    for(let i= 0; i < numbers.length; i++) {
-        if (numbers[i] % 2 === 0) {
-            result.push(numbers[i]);
-        }
-    }
+function removeOddNumbers(arr) {
+    return arr.filter(num => num % 2 === 0); // Jika num % 2 === 0, berarti num adalah angka genap.
 }
-console.log(removeOddNumbers1([1,2,3,4,5,6,7,8,9,10]));
+
+console.log(removeOddNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); 
 
 
-// no 5
+// no 6
 
 function splitString(input:string){
      return input.split(" ");
