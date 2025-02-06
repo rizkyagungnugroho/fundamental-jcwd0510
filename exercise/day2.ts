@@ -66,7 +66,7 @@ for(let i =num; i >= 1; i ++) {
   if (i === 1) {
     massage += i + "";
   } else {
-    massage += i + " x ";
+    massage += i + " x "; 
   }
 }
 
@@ -89,6 +89,20 @@ for(let i = 0; i <p; i++) {
 }
 
 console.log(a);
+
+
+
+
+// no 5
+function faktorial(n:number) {
+  if(n < 0) {
+    return -1;
+    {else if (n ===0)}
+  }
+
+
+  
+}
 
 
 

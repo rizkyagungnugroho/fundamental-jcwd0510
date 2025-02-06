@@ -252,7 +252,7 @@ const array4:string[]=["dunia"];
 console.log(array4.concat(array3));
 
 // another option
-const mergerArr=[...array1, ...array2, ...array3];
+constrArr=[...array1, ...array2, ...array3];
 console.log(mergerArr);
 
 // SPLICE -> untuk menghapus , mengganti , atau menambahkan value pada sebuah arra
