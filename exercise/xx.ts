@@ -1,25 +1,36 @@
-class students{
-    name: string;
-    email: string;
-    age: number;
-    score: number;
-
-    constructor(name:string, email: string, age: number, score: number) {
-        this.name: name;
-        this.email: email;
-        this.age: age;
-        this.score: score;
+class Train {
+    passengers:string;
+    maxCapacity:number;
+    constructor() {
+        this.passengers = "masinis";
+        this.maxCapacity = 10;
+    }
+    isFull(){
+        return this.passengers.length >= this.maxCapacity;
+    }
+    isEmpty(){
+        return this.passengers.length === 1;
     }
 
-    calculator() {
-        if(! this.students.length) return null;
-        const age= this.students.map(s => s.age);   
-        const score= this.students.map(s=> s.score);
-        const average= arr => arr.reduce((a,b) => a + b, 0 / arr.length;
+    showPassager(){
+        return{
+            passagers:this.showPassager,
+            seatkosong: this.maxCapacity - this.passengers.length
+        }
     }
+    passengersIn(){
+        
+    }
+}    
 
-    return {
-        highest=(.... Math.max)
-    }
+
+
+
+const result= {
+    datas: [
+        {name:"joko",nik: "1234", gender: "male"},
+        {name:"budi",nik: "12345", gender: male"},
+        {name:"joko",nik: "1234", gender: "male"},
+    ]
+    
 }
-
